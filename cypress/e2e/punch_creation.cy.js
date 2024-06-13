@@ -35,7 +35,7 @@ describe('Punch Creation Test', () => {
         // Save the data
         cy.get('button#SaveButton').click()
 
-        // Verify that the punch was successfully created (adjust according to the success message that appears)
+        // Verify that the punch was successfully created
         cy.contains('successfully').should('be.visible')
 
         // Take a screenshot
